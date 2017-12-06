@@ -1,0 +1,64 @@
+// === theme ===
+//allowed theme values: Dark, Light, Default, Ocean
+$theme: Default;
+
+// === brand ===
+//allowed brand values: blue-beans, awesome-pizza
+$brand: awesome-pizza;
+
+// === colors ===
+$text-color: #222222;
+$body-background-color: white;
+$theme-color: #170a48;
+$secondary-color: #f27731;
+$ternary-color: #ccf962;
+$link-color: $secondary-color;
+$menu-item-color: white;
+$sidebar-menu-background: #f27731;
+$warning-button-color: orange;
+$background-image: none;
+
+@if $theme == Dark {
+	$text-color: #fff;
+	$body-background-color: #22222a;
+	$theme-color: #42424a;
+	$secondary-color: #c24721;
+	$ternary-color: #698932;
+	$link-color: $secondary-color;
+	$menu-item-color: white;
+	$sidebar-menu-background: #c24721;
+	$warning-button-color: #c24721;
+	$background-image: url("");
+} @else if $theme == Light {
+	$text-color: #000;
+	$body-background-color: #fff;
+	$theme-color: #372a27;
+	$secondary-color: #d26741;
+	$ternary-color: #b9da63;
+	$link-color: $secondary-color;
+	$menu-item-color: white;
+	$sidebar-menu-background: #d26741;
+	$warning-button-color: #d26741;
+	$background-image: url("");
+} @else if $theme == Ocean {
+	$text-color: white;
+	$body-background-color: #fff;
+	$theme-color: #372a27;
+	$secondary-color: #d26741;
+	$ternary-color: #b9da63;
+	$link-color: $secondary-color;
+	$menu-item-color: white;
+	$sidebar-menu-background: #d26741;
+	$warning-button-color: #d26741;
+	$background-image: url('../img/beach.jpeg');
+}
+
+// === fonts ===
+$text-font: 'Alegreya Sans', Arial, sans-serif;
+$headline-font: 'Titillium Web', Georgia, serif;
+
+// === sizes ===
+$content-width: 960px;
+$header-height: 60px;
+$footer-height: 90px;
+$col: col-width($columns: 8);
